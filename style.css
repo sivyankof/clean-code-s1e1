@@ -22,7 +22,7 @@ img {
     .header {
         text-align: center;
     }
-    
+
 }
 .content {
     display: block;
@@ -121,30 +121,37 @@ li > input[type='text'] {
 .btn-delete-task:hover {
     color: #cf2323;
 }
-button img {
+button 
+img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button img:hover {
+button 
+img:hover {
     transform: rotateZ(0);
 }
 /* Completed */
-.completed .task {
+.completed 
+.task {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type='text'] {
+ul 
+li 
+input[type='text'] {
     display: none;
 }
 
-.edit-mode .edit-mode-input {
+.edit-mode 
+.edit-mode-input {
     display: inline-block;
     width: 224px;
 }
 
-.edit-mode .edit-mode-label {
+.edit-mode 
+.edit-mode-label {
     display: none;
 }
