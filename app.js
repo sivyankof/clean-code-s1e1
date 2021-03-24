@@ -7,10 +7,13 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput = document.getElementById('new-task-input'); //Add a new task.
+var taskInput = document.getElementById('add-task-input'); //Add a new task.
 var addButton = document.getElementsByTagName('button')[0]; //first button
-var incompleteTaskHolder = document.getElementById('incomplete'); //ul of #incompleteTasks
-var completedTasksHolder = document.getElementById('completed'); //completed-tasks
+// var incompleteTaskHolder = document.getElementById('incomplete'); //ul of #incompleteTasks
+// var incompleteTaskHolder = document.getElementById('incomplete'); //ul of #incompleteTasks
+
+var incompleteTaskHolder = document.getElementsByClassName('incomplete-lists')[0]; //ul of #incompleteTasks
+var completedTasksHolder = document.getElementsByClassName('completed-lists')[0]; //completed-tasks
 
 //New task list item
 var createNewTaskElement = function (taskString) {
@@ -55,7 +58,7 @@ var createNewTaskElement = function (taskString) {
 
 var addTask = function () {
     console.log('Add Task...');
-    //Create a new list item with the text from the #new-task-input:
+    //Create a new list item with the text from the #add-task-input:
     if (!taskInput.value) return;
     var listItem = createNewTaskElement(taskInput.value);
 
